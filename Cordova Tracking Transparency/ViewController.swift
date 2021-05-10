@@ -13,6 +13,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if (IMPTrackingManager.trackingAvailable) {
+            print("Tracking ist aktiv")
+        } else if (IMPTrackingManager.canRequestTracking) {
+            IMPTrackingManager.requestTracking { status in
+                print(status)
+            }
+        } else {
+            print("Tracking can not requested")
+        }
+    }
 
 
 }
