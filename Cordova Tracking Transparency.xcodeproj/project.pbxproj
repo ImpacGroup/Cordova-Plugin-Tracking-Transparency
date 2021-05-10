@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073FEF2926496BC4002FA25B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FEF2826496BC4002FA25B /* AppDelegate.swift */; };
+		073FEF2B26496BC4002FA25B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FEF2A26496BC4002FA25B /* SceneDelegate.swift */; };
+		073FEF2D26496BC4002FA25B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FEF2C26496BC4002FA25B /* ViewController.swift */; };
+		073FEF3026496BC4002FA25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073FEF2E26496BC4002FA25B /* Main.storyboard */; };
+		073FEF3226496BC7002FA25B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073FEF3126496BC7002FA25B /* Assets.xcassets */; };
+		073FEF3526496BC7002FA25B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073FEF3326496BC7002FA25B /* LaunchScreen.storyboard */; };
+		073FEF4026496BC7002FA25B /* Cordova_Tracking_TransparencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FEF3F26496BC7002FA25B /* Cordova_Tracking_TransparencyTests.swift */; };
+		073FEF4B26496BC7002FA25B /* Cordova_Tracking_TransparencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FEF4A26496BC7002FA25B /* Cordova_Tracking_TransparencyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		073FEF3C26496BC7002FA25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073FEF1D26496BC4002FA25B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073FEF2426496BC4002FA25B;
+			remoteInfo = "Cordova Tracking Transparency";
+		};
+		073FEF4726496BC7002FA25B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073FEF1D26496BC4002FA25B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073FEF2426496BC4002FA25B;
+			remoteInfo = "Cordova Tracking Transparency";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		073FEF2526496BC4002FA25B /* Cordova Tracking Transparency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cordova Tracking Transparency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		073FEF2826496BC4002FA25B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		073FEF2A26496BC4002FA25B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		073FEF2C26496BC4002FA25B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		073FEF2F26496BC4002FA25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		073FEF3126496BC7002FA25B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		073FEF3426496BC7002FA25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		073FEF3626496BC7002FA25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		073FEF3B26496BC7002FA25B /* Cordova Tracking TransparencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cordova Tracking TransparencyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		073FEF3F26496BC7002FA25B /* Cordova_Tracking_TransparencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordova_Tracking_TransparencyTests.swift; sourceTree = "<group>"; };
+		073FEF4126496BC7002FA25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		073FEF4626496BC7002FA25B /* Cordova Tracking TransparencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cordova Tracking TransparencyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		073FEF4A26496BC7002FA25B /* Cordova_Tracking_TransparencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordova_Tracking_TransparencyUITests.swift; sourceTree = "<group>"; };
+		073FEF4C26496BC7002FA25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		073FEF2226496BC4002FA25B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073FEF3826496BC7002FA25B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073FEF4326496BC7002FA25B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073FEF1C26496BC4002FA25B = {
+			isa = PBXGroup;
+			children = (
+				073FEF2726496BC4002FA25B /* Cordova Tracking Transparency */,
+				073FEF3E26496BC7002FA25B /* Cordova Tracking TransparencyTests */,
+				073FEF4926496BC7002FA25B /* Cordova Tracking TransparencyUITests */,
+				073FEF2626496BC4002FA25B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		073FEF2626496BC4002FA25B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				073FEF2526496BC4002FA25B /* Cordova Tracking Transparency.app */,
+				073FEF3B26496BC7002FA25B /* Cordova Tracking TransparencyTests.xctest */,
+				073FEF4626496BC7002FA25B /* Cordova Tracking TransparencyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		073FEF2726496BC4002FA25B /* Cordova Tracking Transparency */ = {
+			isa = PBXGroup;
+			children = (
+				073FEF2826496BC4002FA25B /* AppDelegate.swift */,
+				073FEF2A26496BC4002FA25B /* SceneDelegate.swift */,
+				073FEF2C26496BC4002FA25B /* ViewController.swift */,
+				073FEF2E26496BC4002FA25B /* Main.storyboard */,
+				073FEF3126496BC7002FA25B /* Assets.xcassets */,
+				073FEF3326496BC7002FA25B /* LaunchScreen.storyboard */,
+				073FEF3626496BC7002FA25B /* Info.plist */,
+			);
+			path = "Cordova Tracking Transparency";
+			sourceTree = "<group>";
+		};
+		073FEF3E26496BC7002FA25B /* Cordova Tracking TransparencyTests */ = {
+			isa = PBXGroup;
+			children = (
+				073FEF3F26496BC7002FA25B /* Cordova_Tracking_TransparencyTests.swift */,
+				073FEF4126496BC7002FA25B /* Info.plist */,
+			);
+			path = "Cordova Tracking TransparencyTests";
+			sourceTree = "<group>";
+		};
+		073FEF4926496BC7002FA25B /* Cordova Tracking TransparencyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				073FEF4A26496BC7002FA25B /* Cordova_Tracking_TransparencyUITests.swift */,
+				073FEF4C26496BC7002FA25B /* Info.plist */,
+			);
+			path = "Cordova Tracking TransparencyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		073FEF2426496BC4002FA25B /* Cordova Tracking Transparency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073FEF4F26496BC7002FA25B /* Build configuration list for PBXNativeTarget "Cordova Tracking Transparency" */;
+			buildPhases = (
+				073FEF2126496BC4002FA25B /* Sources */,
+				073FEF2226496BC4002FA25B /* Frameworks */,
+				073FEF2326496BC4002FA25B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cordova Tracking Transparency";
+			productName = "Cordova Tracking Transparency";
+			productReference = 073FEF2526496BC4002FA25B /* Cordova Tracking Transparency.app */;
+			productType = "com.apple.product-type.application";
+		};
+		073FEF3A26496BC7002FA25B /* Cordova Tracking TransparencyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073FEF5226496BC7002FA25B /* Build configuration list for PBXNativeTarget "Cordova Tracking TransparencyTests" */;
+			buildPhases = (
+				073FEF3726496BC7002FA25B /* Sources */,
+				073FEF3826496BC7002FA25B /* Frameworks */,
+				073FEF3926496BC7002FA25B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				073FEF3D26496BC7002FA25B /* PBXTargetDependency */,
+			);
+			name = "Cordova Tracking TransparencyTests";
+			productName = "Cordova Tracking TransparencyTests";
+			productReference = 073FEF3B26496BC7002FA25B /* Cordova Tracking TransparencyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		073FEF4526496BC7002FA25B /* Cordova Tracking TransparencyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 073FEF5526496BC7002FA25B /* Build configuration list for PBXNativeTarget "Cordova Tracking TransparencyUITests" */;
+			buildPhases = (
+				073FEF4226496BC7002FA25B /* Sources */,
+				073FEF4326496BC7002FA25B /* Frameworks */,
+				073FEF4426496BC7002FA25B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				073FEF4826496BC7002FA25B /* PBXTargetDependency */,
+			);
+			name = "Cordova Tracking TransparencyUITests";
+			productName = "Cordova Tracking TransparencyUITests";
+			productReference = 073FEF4626496BC7002FA25B /* Cordova Tracking TransparencyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		073FEF1D26496BC4002FA25B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					073FEF2426496BC4002FA25B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					073FEF3A26496BC7002FA25B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 073FEF2426496BC4002FA25B;
+					};
+					073FEF4526496BC7002FA25B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 073FEF2426496BC4002FA25B;
+					};
+				};
+			};
+			buildConfigurationList = 073FEF2026496BC4002FA25B /* Build configuration list for PBXProject "Cordova Tracking Transparency" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 073FEF1C26496BC4002FA25B;
+			productRefGroup = 073FEF2626496BC4002FA25B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				073FEF2426496BC4002FA25B /* Cordova Tracking Transparency */,
+				073FEF3A26496BC7002FA25B /* Cordova Tracking TransparencyTests */,
+				073FEF4526496BC7002FA25B /* Cordova Tracking TransparencyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		073FEF2326496BC4002FA25B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073FEF3526496BC7002FA25B /* LaunchScreen.storyboard in Resources */,
+				073FEF3226496BC7002FA25B /* Assets.xcassets in Resources */,
+				073FEF3026496BC4002FA25B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073FEF3926496BC7002FA25B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073FEF4426496BC7002FA25B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		073FEF2126496BC4002FA25B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073FEF2D26496BC4002FA25B /* ViewController.swift in Sources */,
+				073FEF2926496BC4002FA25B /* AppDelegate.swift in Sources */,
+				073FEF2B26496BC4002FA25B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073FEF3726496BC7002FA25B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073FEF4026496BC7002FA25B /* Cordova_Tracking_TransparencyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		073FEF4226496BC7002FA25B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073FEF4B26496BC7002FA25B /* Cordova_Tracking_TransparencyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		073FEF3D26496BC7002FA25B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 073FEF2426496BC4002FA25B /* Cordova Tracking Transparency */;
+			targetProxy = 073FEF3C26496BC7002FA25B /* PBXContainerItemProxy */;
+		};
+		073FEF4826496BC7002FA25B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 073FEF2426496BC4002FA25B /* Cordova Tracking Transparency */;
+			targetProxy = 073FEF4726496BC7002FA25B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		073FEF2E26496BC4002FA25B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				073FEF2F26496BC4002FA25B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		073FEF3326496BC7002FA25B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				073FEF3426496BC7002FA25B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		073FEF4D26496BC7002FA25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		073FEF4E26496BC7002FA25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		073FEF5026496BC7002FA25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47V7A37MR;
+				INFOPLIST_FILE = "Cordova Tracking Transparency/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.impacgroup.Cordova-Tracking-Transparency";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		073FEF5126496BC7002FA25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47V7A37MR;
+				INFOPLIST_FILE = "Cordova Tracking Transparency/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.impacgroup.Cordova-Tracking-Transparency";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		073FEF5326496BC7002FA25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47V7A37MR;
+				INFOPLIST_FILE = "Cordova Tracking TransparencyTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.impacgroup.Cordova-Tracking-TransparencyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cordova Tracking Transparency.app/Cordova Tracking Transparency";
+			};
+			name = Debug;
+		};
+		073FEF5426496BC7002FA25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47V7A37MR;
+				INFOPLIST_FILE = "Cordova Tracking TransparencyTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.impacgroup.Cordova-Tracking-TransparencyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cordova Tracking Transparency.app/Cordova Tracking Transparency";
+			};
+			name = Release;
+		};
+		073FEF5626496BC7002FA25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47V7A37MR;
+				INFOPLIST_FILE = "Cordova Tracking TransparencyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.impacgroup.Cordova-Tracking-TransparencyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cordova Tracking Transparency";
+			};
+			name = Debug;
+		};
+		073FEF5726496BC7002FA25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L47V7A37MR;
+				INFOPLIST_FILE = "Cordova Tracking TransparencyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.impacgroup.Cordova-Tracking-TransparencyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cordova Tracking Transparency";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		073FEF2026496BC4002FA25B /* Build configuration list for PBXProject "Cordova Tracking Transparency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073FEF4D26496BC7002FA25B /* Debug */,
+				073FEF4E26496BC7002FA25B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		073FEF4F26496BC7002FA25B /* Build configuration list for PBXNativeTarget "Cordova Tracking Transparency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073FEF5026496BC7002FA25B /* Debug */,
+				073FEF5126496BC7002FA25B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		073FEF5226496BC7002FA25B /* Build configuration list for PBXNativeTarget "Cordova Tracking TransparencyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073FEF5326496BC7002FA25B /* Debug */,
+				073FEF5426496BC7002FA25B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		073FEF5526496BC7002FA25B /* Build configuration list for PBXNativeTarget "Cordova Tracking TransparencyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				073FEF5626496BC7002FA25B /* Debug */,
+				073FEF5726496BC7002FA25B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 073FEF1D26496BC4002FA25B /* Project object */;
+}
