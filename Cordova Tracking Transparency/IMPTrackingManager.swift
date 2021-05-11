@@ -8,29 +8,63 @@
 import UIKit
 import AppTrackingTransparency
 
-class IMPTrackingManager {
+class IMPTrackingManager: InfoViewControllerDelegate {
     
-    class var trackingStatus: ATTrackingManager.AuthorizationStatus {
+    var trackingStatus: ATTrackingManager.AuthorizationStatus {
         get {
             ATTrackingManager.trackingAuthorizationStatus
         }
     }
     
-    class var trackingAvailable: Bool {
+    var trackingAvailable: Bool {
         get {
             return ATTrackingManager.trackingAuthorizationStatus == .authorized
         }
     }
     
-    class var canRequestTracking: Bool {
+    var canRequestTracking: Bool {
         get {
             return ATTrackingManager.trackingAuthorizationStatus == .notDetermined
         }
     }
     
-    class func requestTracking(completion: @escaping (Bool) -> ()) {
-        ATTrackingManager.requestTrackingAuthorization { status in
-            completion(trackingAvailable)
+    var requestCompletion: ((Bool) -> ())? = nil
+        
+    func requestTracking(completion: @escaping (Bool) -> (), info: TrackingRequestInfo? = nil) {
+        if let mInfo = info, let rootVC = getCurrentViewController() {
+            let vc = InfoViewController(info: mInfo, nibName: "InfoViewController", bundle: nil)
+            vc.delegate = self
+            requestCompletion = completion
+            vc.modalPresentationStyle = .fullScreen
+            rootVC.present(vc, animated: true, completion: nil)
+        } else {
+            ATTrackingManager.requestTrackingAuthorization {[weak self] status in
+                guard let strongSelf = self else { return }
+                completion(strongSelf.trackingAvailable)
+            }
         }
+    }
+    
+    func onButtonPressed() {
+        ATTrackingManager.requestTrackingAuthorization {[weak self] status in
+            guard let strongSelf = self else { return }
+            if let mCompletion = strongSelf.requestCompletion {
+                mCompletion(strongSelf.trackingAvailable)
+            }
+            strongSelf.requestCompletion = nil
+        }
+    }
+        
+    
+    private func getCurrentViewController() -> UIViewController? {
+        var currentVC: UIViewController? = nil
+        if let viewController = UIApplication.shared.connectedScenes.filter({$0.activationState == .foregroundActive}).map({$0 as? UIWindowScene}).compactMap({$0}).first?.windows.filter({$0.isKeyWindow}).first?.rootViewController {
+            currentVC = viewController
+            while currentVC?.presentedViewController != nil
+            {
+                currentVC = currentVC?.presentedViewController;
+            }
+        }
+        return currentVC
     }
 }

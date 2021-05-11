@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		073A899E264976D300C5A8AB /* IMPTrackingFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073A899D264976D300C5A8AB /* IMPTrackingFacade.swift */; };
+		073AD873264A690600A06349 /* TrackingRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073AD872264A690600A06349 /* TrackingRequestInfo.swift */; };
+		073AD875264A6B7600A06349 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073AD874264A6B7600A06349 /* InfoViewController.xib */; };
+		073AD877264A6BC200A06349 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073AD876264A6BC200A06349 /* InfoViewController.swift */; };
+		073AD879264A6EC400A06349 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073AD878264A6EC400A06349 /* InfoTableViewCell.xib */; };
+		073AD87B264A71F000A06349 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073AD87A264A71F000A06349 /* InfoTableViewCell.swift */; };
 		073FEF2926496BC4002FA25B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FEF2826496BC4002FA25B /* AppDelegate.swift */; };
 		073FEF2B26496BC4002FA25B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FEF2A26496BC4002FA25B /* SceneDelegate.swift */; };
 		073FEF2D26496BC4002FA25B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073FEF2C26496BC4002FA25B /* ViewController.swift */; };
@@ -41,6 +46,11 @@
 
 /* Begin PBXFileReference section */
 		073A899D264976D300C5A8AB /* IMPTrackingFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMPTrackingFacade.swift; sourceTree = "<group>"; };
+		073AD872264A690600A06349 /* TrackingRequestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingRequestInfo.swift; sourceTree = "<group>"; };
+		073AD874264A6B7600A06349 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		073AD876264A6BC200A06349 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		073AD878264A6EC400A06349 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		073AD87A264A71F000A06349 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		073FEF2526496BC4002FA25B /* Cordova Tracking Transparency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cordova Tracking Transparency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		073FEF2826496BC4002FA25B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		073FEF2A26496BC4002FA25B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,7 +134,12 @@
 				073FEF2A26496BC4002FA25B /* SceneDelegate.swift */,
 				073FEF2C26496BC4002FA25B /* ViewController.swift */,
 				073FEF5826496F0B002FA25B /* IMPTrackingManager.swift */,
+				073AD872264A690600A06349 /* TrackingRequestInfo.swift */,
 				073A899D264976D300C5A8AB /* IMPTrackingFacade.swift */,
+				073AD876264A6BC200A06349 /* InfoViewController.swift */,
+				073AD87A264A71F000A06349 /* InfoTableViewCell.swift */,
+				073AD874264A6B7600A06349 /* InfoViewController.xib */,
+				073AD878264A6EC400A06349 /* InfoTableViewCell.xib */,
 				073FEF2E26496BC4002FA25B /* Main.storyboard */,
 				073FEF3126496BC7002FA25B /* Assets.xcassets */,
 				073FEF3326496BC7002FA25B /* LaunchScreen.storyboard */,
@@ -282,8 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073AD879264A6EC400A06349 /* InfoTableViewCell.xib in Resources */,
 				073FEF3526496BC7002FA25B /* LaunchScreen.storyboard in Resources */,
 				073FEF3226496BC7002FA25B /* Assets.xcassets in Resources */,
+				073AD875264A6B7600A06349 /* InfoViewController.xib in Resources */,
 				073FEF3026496BC4002FA25B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,8 +429,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				073AD873264A690600A06349 /* TrackingRequestInfo.swift in Sources */,
+				073AD87B264A71F000A06349 /* InfoTableViewCell.swift in Sources */,
 				073FEF2D26496BC4002FA25B /* ViewController.swift in Sources */,
 				073FEF2926496BC4002FA25B /* AppDelegate.swift in Sources */,
+				073AD877264A6BC200A06349 /* InfoViewController.swift in Sources */,
 				073A899E264976D300C5A8AB /* IMPTrackingFacade.swift in Sources */,
 				073FEF2B26496BC4002FA25B /* SceneDelegate.swift in Sources */,
 				073FEF5926496F0B002FA25B /* IMPTrackingManager.swift in Sources */,
