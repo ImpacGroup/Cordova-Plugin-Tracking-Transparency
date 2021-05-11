@@ -23,7 +23,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Niq-9J-h1I">
-                        <rect key="frame" x="50" y="16" width="364" height="68"/>
+                        <rect key="frame" x="56" y="16" width="358" height="68"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                     <constraint firstItem="Niq-9J-h1I" firstAttribute="top" secondItem="O6e-t8-F7d" secondAttribute="top" constant="16" id="6Cx-kX-yo2"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hNW-Mb-F5F" secondAttribute="bottom" id="J65-mr-f1d"/>
                     <constraint firstAttribute="bottom" secondItem="Niq-9J-h1I" secondAttribute="bottom" constant="16" id="LLt-rW-tqJ"/>
-                    <constraint firstItem="Niq-9J-h1I" firstAttribute="leading" secondItem="hNW-Mb-F5F" secondAttribute="trailing" constant="10" id="dv3-ug-vGO"/>
+                    <constraint firstItem="Niq-9J-h1I" firstAttribute="leading" secondItem="hNW-Mb-F5F" secondAttribute="trailing" constant="16" id="dv3-ug-vGO"/>
                     <constraint firstItem="hNW-Mb-F5F" firstAttribute="top" relation="greaterThanOrEqual" secondItem="O6e-t8-F7d" secondAttribute="top" id="e7Y-S2-Gkz"/>
                     <constraint firstAttribute="trailing" secondItem="Niq-9J-h1I" secondAttribute="trailing" id="evd-IT-JQN"/>
                     <constraint firstItem="hNW-Mb-F5F" firstAttribute="leading" secondItem="O6e-t8-F7d" secondAttribute="leading" id="ftU-Ei-XIj"/>

@@ -7,10 +7,12 @@
 
 import UIKit
 
+@available(iOS 14, *)
 protocol InfoViewControllerDelegate: AnyObject {
     func onButtonPressed()
 }
 
+@available(iOS 14, *)
 class InfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -58,6 +60,7 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func onButtonPressed(_ sender: Any) {
+        print(delegate)
         delegate?.onButtonPressed()
     }
     

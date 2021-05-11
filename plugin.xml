@@ -25,9 +25,13 @@
                 <param name="ios-package" value="ImpacTracking"/>
             </feature>
         </config-file>
-        <source-file src="src/ios/SwissRxLogin.swift"/>
-        <source-file src="src/ios/IMPSwissRxViewController.swift"/>
-        <source-file src="src/ios/IMPSwissRxViewController.xib"/>
+        <source-file src="src/IMPTrackingFacade.swift"/>
+        <source-file src="src/IMPTrackingManager.swift"/>
+        <source-file src="src/InfoTableViewCell.swift"/>
+        <source-file src="src/InfoViewController.swift"/>
+        <source-file src="src/TrackingRequestInfo.swift"/>
+        <source-file src="src/InfoTableViewCell.xib"/>
+        <source-file src="src/InfoViewController.xib"/>
     </platform>
 
 </plugin>
