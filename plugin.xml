@@ -30,6 +30,7 @@
         <source-file src="src/InfoTableViewCell.swift"/>
         <source-file src="src/InfoViewController.swift"/>
         <source-file src="src/TrackingRequestInfo.swift"/>
+        <source-file src="src/UIColor-Extension.swift"/>        
         <source-file src="src/InfoTableViewCell.xib"/>
         <source-file src="src/InfoViewController.xib"/>
     </platform>
