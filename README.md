@@ -7,6 +7,9 @@ This framework allows to implement the App Tracking Transparency Framework for i
 
 ### Installation ###
 
+```
+cordova plugin add cordova-plugin-tracking-transparency
+```
 
 ### Implementation ###
 
