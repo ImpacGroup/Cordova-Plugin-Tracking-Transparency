@@ -42,7 +42,12 @@ class IMPTrackingManager: InfoViewControllerDelegate {
             viewController!.delegate = self
             requestCompletion = completion
             viewController!.modalPresentationStyle = .overFullScreen
-            present(viewController: viewController!)
+            if !present(viewController: viewController!) {
+                ATTrackingManager.requestTrackingAuthorization {[weak self] status in
+                    guard let strongSelf = self else { return }
+                    completion(strongSelf.trackingAvailable)
+                }
+            }
         } else {
             ATTrackingManager.requestTrackingAuthorization {[weak self] status in
                 guard let strongSelf = self else { return }
@@ -51,11 +56,13 @@ class IMPTrackingManager: InfoViewControllerDelegate {
         }
     }
     
-    private func present(viewController: UIViewController) {
+    private func present(viewController: UIViewController) -> Bool {
         if let topVC = getCurrentViewController() {
             topVC.present(viewController, animated: true, completion: nil)
+            return true
         } else {
             print("cordova-plugin-tracking-transparency: Could not get view controller")
+            return false
         }
     }
     
