@@ -14,8 +14,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
+        let alert = UIAlertController(title: "Test", message: "Test", preferredStyle: .alert)
+        let action = UIAlertAction(title: "ok", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
         
         if #available(iOS 14, *) {
             if (IMPTrackingManager.shared.trackingAvailable) {
@@ -33,7 +43,8 @@ class ViewController: UIViewController {
             } else {
                 print("Tracking can not requested")
             }
-        } else {
+        }
+        else {
             print("No ATT")
         }
     }

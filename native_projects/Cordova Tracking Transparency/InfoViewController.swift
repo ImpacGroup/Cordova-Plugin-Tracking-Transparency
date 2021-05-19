@@ -60,7 +60,6 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func onButtonPressed(_ sender: Any) {
-        print(delegate)
         delegate?.onButtonPressed()
     }
     

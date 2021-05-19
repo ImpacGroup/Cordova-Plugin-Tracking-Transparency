@@ -46,7 +46,7 @@ import Cordova
                             IMPTrackingManager.shared.requestTracking(completion: requestCompletion)
                         }
                     } catch {
-                        print(error)
+                        print("cordova-plugin-tracking-transparency: \(error)")
                         let result = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: error.localizedDescription)
                         self.commandDelegate.send(result, callbackId: command.callbackId)
                     }
