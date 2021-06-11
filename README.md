@@ -13,7 +13,7 @@ cordova plugin add cordova-plugin-tracking-transparency
 
 ### Implementation ###
 
-First you have to add a string in the app info.plist for NSContactsUsageDescription.
+First you have to add a string in the app info.plist for NSUserTrackingUsageDescription.
 To do this, add following code in your config.xml and reinstall ios platform.
 
 ```xml
@@ -58,7 +58,7 @@ private async request(info: TrackingRequestInfo | undefined): Promise<boolean> {
 }    
 ```
 
-Note that tintImage can be a base64 image or a name of a SF-Symbol.
+Note that image can be a base64 image or a name of a SF-Symbol.
 ```ts
 interface TrackingRequestInfo {
     primaryColor: string;
