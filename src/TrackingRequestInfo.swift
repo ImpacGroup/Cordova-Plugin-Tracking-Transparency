@@ -36,7 +36,11 @@ struct TrackingRequestInfo: Decodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decode(String.self, forKey: .title)
-        text = try values.decode(String.self, forKey: .text)
+        do {
+            text = try values.decode(String.self, forKey: .text)
+        } catch {
+            text = nil
+        }
         subText = try values.decode(String.self, forKey: .subText)
         buttonTitle = try values.decode(String.self, forKey: .buttonTitle)
         reasons = try values.decode([TrackingRequestReason].self, forKey: .reasons)
