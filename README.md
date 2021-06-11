@@ -17,7 +17,7 @@ First you have to add a string in the app info.plist for NSUserTrackingUsageDesc
 To do this, add following code in your config.xml and reinstall ios platform.
 
 ```xml
-<edit-config file="*-Info.plist" mode="merge" target="NSContactsUsageDescription">
+<edit-config file="*-Info.plist" mode="merge" target="NSUserTrackingUsageDescription">
             <string>ENTER YOUR TEXT HERE</string>
 </edit-config>
 ```
