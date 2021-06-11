@@ -1,6 +1,7 @@
 
 {
     "title": "Allow tracking on the next screen for:",
+    "text": "We need tracking for our service",
     "subText": "You can change this option later in the Settings app.",
     "buttonTitle": "Next",
     "primaryColor": "#344955",
@@ -8,6 +9,16 @@
     "onPrimaryColor": "#FFFFFF",
     "onSecondaryColor": "#000000",
     "reasons": [
+        {
+            "text": "Special offers and promotions just for you",
+            "image": "heart.circle",
+            "tintImage": true
+        },
+        {
+            "text": "Special offers and promotions just for you",
+            "image": "heart.circle",
+            "tintImage": true
+        },
         {
             "text": "Special offers and promotions just for you",
             "image": "heart.circle",

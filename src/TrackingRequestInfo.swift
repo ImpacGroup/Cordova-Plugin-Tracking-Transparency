@@ -16,6 +16,7 @@ struct TrackingRequestInfo: Decodable {
     let onPrimaryColor: UIColor
     let onSecondaryColor: UIColor
     let title: String
+    let text: String?
     let reasons: [TrackingRequestReason]
     let subText: String
     let buttonTitle: String
@@ -26,6 +27,7 @@ struct TrackingRequestInfo: Decodable {
         case onPrimaryColor
         case onSecondaryColor
         case title
+        case text
         case reasons
         case subText
         case buttonTitle
@@ -34,6 +36,7 @@ struct TrackingRequestInfo: Decodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decode(String.self, forKey: .title)
+        text = try values.decode(String.self, forKey: .text)
         subText = try values.decode(String.self, forKey: .subText)
         buttonTitle = try values.decode(String.self, forKey: .buttonTitle)
         reasons = try values.decode([TrackingRequestReason].self, forKey: .reasons)
