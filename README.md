@@ -66,6 +66,7 @@ interface TrackingRequestInfo {
     onPrimaryColor: string;
     onSecondaryColor: string;
     title: string;
+    text?: string;
     subText: string;
     buttonTitle: string;
     reasons: TrackingRequestReason[];
