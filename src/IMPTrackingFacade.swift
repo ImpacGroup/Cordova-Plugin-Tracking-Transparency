@@ -14,10 +14,10 @@ import Cordova
     
     @objc(trackingStatus:) func trackingStatus(command: CDVInvokedUrlCommand) {
         if #available(iOS 14, *) {
-            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: IMPTrackingManager.shared.trackingStatus)
+            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: IMPTrackingManager.shared.trackingStatus.rawValue)
             self.commandDelegate.send(result, callbackId: command.callbackId)
         } else {
-            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: ATTrackingManager.AuthorizationStatus.authorized)
+            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: 3)
             self.commandDelegate.send(result, callbackId: command.callbackId)
         }
     }
