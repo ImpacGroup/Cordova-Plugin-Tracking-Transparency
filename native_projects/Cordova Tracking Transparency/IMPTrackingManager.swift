@@ -21,18 +21,6 @@ class IMPTrackingManager: InfoViewControllerDelegate {
         }
     }
     
-    var trackingAvailable: Bool {
-        get {
-            return ATTrackingManager.trackingAuthorizationStatus == .authorized
-        }
-    }
-    
-    var canRequestTracking: Bool {
-        get {
-            return ATTrackingManager.trackingAuthorizationStatus == .notDetermined
-        }
-    }
-    
     var requestCompletion: ((Bool) -> ())? = nil
     var viewController: InfoViewController? = nil
         

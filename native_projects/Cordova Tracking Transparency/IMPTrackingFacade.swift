@@ -12,22 +12,12 @@ import Cordova
     
     private var onRequestCallbackId: String?
     
-    @objc(canRequestTracking:) func canRequestTracking(command: CDVInvokedUrlCommand) {
+    @objc(trackingStatus:) func trackingStatus(command: CDVInvokedUrlCommand) {
         if #available(iOS 14, *) {
-            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: IMPTrackingManager.shared.canRequestTracking)
+            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: IMPTrackingManager.shared.trackingStatus)
             self.commandDelegate.send(result, callbackId: command.callbackId)
         } else {
-            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: false)
-            self.commandDelegate.send(result, callbackId: command.callbackId)
-        }
-    }
-    
-    @objc(trackingAvailable:) func trackingAvailable(command: CDVInvokedUrlCommand) {
-        if #available(iOS 14, *) {
-            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: IMPTrackingManager.shared.trackingAvailable)
-            self.commandDelegate.send(result, callbackId: command.callbackId)
-        } else {
-            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: true)
+            let result = CDVPluginResult(status: CDVCommandStatus_OK, messageAs: ATTrackingManager.AuthorizationStatus.authorized)
             self.commandDelegate.send(result, callbackId: command.callbackId)
         }
     }
