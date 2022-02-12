@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Cordova
 
 @objc (ImpacTracking) class IMPTrackingFacade: CDVPlugin {
     
