@@ -3,7 +3,7 @@ interface Plugins{
 }
 
 interface ICordovaTrackingTransparency{
-    trackingState: (callback: (result: CordovaTrackingTransparencyAuthStatus) => void) => void
+    trackingStatus: (callback: (result: CordovaTrackingTransparencyAuthStatus) => void) => void
     requestTracking: (callback: (result: boolean) => void, errorCallback: (error: any) => void,info?: ICordovaTrackingTransparencyInfo, ) => void
 }
 
@@ -20,6 +20,7 @@ interface ICordovaTrackingTransparencyInfo{
     onPrimaryColor?: string;
     onSecondaryColor?: string;
     title?: string;
+    text?: string;
     reasons?: ICordovaTrackingTransparencyRequestReason;
     subText?: string;
     buttonTitle?: string;

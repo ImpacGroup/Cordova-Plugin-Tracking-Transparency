@@ -2,8 +2,8 @@
 
 function ImpacTracking() {}
 
-ImpacTracking.prototype.trackingState = function(successCallback) {
-    cordova.exec(successCallback, null, 'ImpacTracking', 'trackingState', []);
+ImpacTracking.prototype.trackingStatus = function(successCallback) {
+    cordova.exec(successCallback, null, 'ImpacTracking', 'trackingStatus', []);
 }
 
 ImpacTracking.prototype.requestTracking = function(successCallback, errorCallback,info) {
