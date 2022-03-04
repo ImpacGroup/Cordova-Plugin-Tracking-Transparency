@@ -2,16 +2,15 @@
 
 function ImpacTracking() {}
 
-ImpacTracking.prototype.canRequestTracking = function(successCallback) {
-    cordova.exec(successCallback, null, 'ImpacTracking', 'canRequestTracking', []);
+ImpacTracking.prototype.trackingStatus = function(successCallback) {
+    cordova.exec(successCallback, null, 'ImpacTracking', 'trackingStatus', []);
 }
 
-ImpacTracking.prototype.trackingAvailable = function(successCallback) {
-    cordova.exec(successCallback, null, 'ImpacTracking', 'trackingAvailable', []);
-}
-
-ImpacTracking.prototype.requestTracking = function(info, successCallback, errorCallback) {
-    cordova.exec(successCallback, errorCallback, 'ImpacTracking', 'requestTracking', [info]);
+ImpacTracking.prototype.requestTracking = function(successCallback, errorCallback,info) {
+    var infoString=undefined;
+    if(info!==undefined&&info!==null)
+        infoString=JSON.stringify(info);
+    cordova.exec(successCallback, errorCallback, 'ImpacTracking', 'requestTracking', [infoString]);
 }
 
 ImpacTracking.install = function() {

@@ -8,7 +8,12 @@
 import UIKit
 import AppTrackingTransparency
 
+@available(iOS 14, *)
 class IMPTrackingManager: InfoViewControllerDelegate {
+    
+    static let shared: IMPTrackingManager = IMPTrackingManager()
+    
+    private init() {}
     
     var trackingStatus: ATTrackingManager.AuthorizationStatus {
         get {
@@ -17,16 +22,16 @@ class IMPTrackingManager: InfoViewControllerDelegate {
     }
     
     var trackingAvailable: Bool {
-        get {
-            return ATTrackingManager.trackingAuthorizationStatus == .authorized
+            get {
+                return ATTrackingManager.trackingAuthorizationStatus == .authorized
+            }
         }
-    }
-    
-    var canRequestTracking: Bool {
-        get {
-            return ATTrackingManager.trackingAuthorizationStatus == .notDetermined
+        
+        var canRequestTracking: Bool {
+            get {
+                return ATTrackingManager.trackingAuthorizationStatus == .notDetermined
+            }
         }
-    }
     
     var requestCompletion: ((Bool) -> ())? = nil
     var viewController: InfoViewController? = nil
@@ -36,7 +41,8 @@ class IMPTrackingManager: InfoViewControllerDelegate {
             viewController = InfoViewController(info: mInfo, nibName: "InfoViewController", bundle: nil)
             viewController!.delegate = self
             requestCompletion = completion
-            viewController!.modalPresentationStyle = .fullScreen
+            viewController!.modalPresentationStyle = .overFullScreen
+            print(viewController?.delegate)
             rootVC.present(viewController!, animated: true, completion: nil)
         } else {
             ATTrackingManager.requestTrackingAuthorization {[weak self] status in

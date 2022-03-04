@@ -16,6 +16,7 @@ struct TrackingRequestInfo: Decodable {
     let onPrimaryColor: UIColor
     let onSecondaryColor: UIColor
     let title: String
+    let text: String?
     let reasons: [TrackingRequestReason]
     let subText: String
     let buttonTitle: String
@@ -26,6 +27,7 @@ struct TrackingRequestInfo: Decodable {
         case onPrimaryColor
         case onSecondaryColor
         case title
+        case text
         case reasons
         case subText
         case buttonTitle
@@ -34,6 +36,11 @@ struct TrackingRequestInfo: Decodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decode(String.self, forKey: .title)
+        do {
+            text = try values.decode(String.self, forKey: .text)
+        } catch {
+            text = nil
+        }
         subText = try values.decode(String.self, forKey: .subText)
         buttonTitle = try values.decode(String.self, forKey: .buttonTitle)
         reasons = try values.decode([TrackingRequestReason].self, forKey: .reasons)
@@ -68,16 +75,28 @@ struct TrackingRequestReason: Decodable {
         text = try values.decode(String.self, forKey: .text)
         tintImage = try values.decode(Bool.self, forKey: .tintImage)
         let imageString = try values.decode(String.self, forKey: .image)
-        if let mImage = TrackingRequestReason.imageForBase64String(imageString) {
-            if tintImage {
-                image = mImage.withRenderingMode(.alwaysTemplate)
+        if #available(iOS 13.0, *) {
+            if let mImage = TrackingRequestReason.imageForBase64String(imageString) {
+                if tintImage {
+                    image = mImage.withRenderingMode(.alwaysTemplate)
+                } else {
+                    image = mImage.withRenderingMode(.alwaysOriginal)
+                }
+            } else if let mImage = UIImage(systemName: imageString) {
+                image = mImage
             } else {
-                image = mImage.withRenderingMode(.alwaysOriginal)
+                image = UIImage()
             }
-        } else if let mImage = UIImage(systemName: imageString) {
-            image = mImage
         } else {
-            image = UIImage()
+            if let mImage = TrackingRequestReason.imageForBase64String(imageString) {
+                if tintImage {
+                    image = mImage.withRenderingMode(.alwaysTemplate)
+                } else {
+                    image = mImage.withRenderingMode(.alwaysOriginal)
+                }
+            } else {
+                image = UIImage()
+            }
         }
     }
     

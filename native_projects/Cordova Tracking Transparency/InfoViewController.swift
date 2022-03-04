@@ -20,6 +20,8 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var subText: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
     
     weak var delegate: InfoViewControllerDelegate?
     
@@ -44,15 +46,24 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
             button.setTitle(mInfo.buttonTitle, for: .normal)
             titleLabel.text = mInfo.title
             subText.text = mInfo.subText
-            
+            textLabel.text = mInfo.text
             view.backgroundColor = mInfo.primaryColor
             titleLabel.textColor = mInfo.onPrimaryColor
+            textLabel.textColor = mInfo.onPrimaryColor
             subText.textColor = mInfo.onPrimaryColor
             button.backgroundColor = mInfo.secondaryColor
             button.tintColor = mInfo.onSecondaryColor
             button.layer.cornerRadius = 8
         }
         
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.reloadData()
+        tableView.layoutIfNeeded()
+        tableHeightConstraint.constant = tableView.contentSize.height
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,7 +71,6 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func onButtonPressed(_ sender: Any) {
-        print(delegate)
         delegate?.onButtonPressed()
     }
     
@@ -77,4 +87,3 @@ class InfoViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
 }
-
